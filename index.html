@@ -1,164 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landing Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
 
-  <style>
-    body {
-      font-family: "Segoe UI", Arial, sans-serif;
-      background-color: #f5f7f6;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      color: #333;
-    }
-
-    header, footer {
-      background-color: #0f3d3e;
-      color: #ffffff;
-      text-align: center;
-      padding: 25px;
-    }
-
-    nav a {
-      color: #ffb703;
-      margin: 0 12px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    section {
-      padding: 50px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    h2 {
-      border-bottom: 3px solid #0f3d3e;
-      padding-bottom: 10px;
-      color: #0f3d3e;
-    }
-  </style>
 </head>
-
 <body>
+  <header>
+    <h1>Landing Page</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
 
-<!-- Header -->
-<header>
-  <h1 style="color:#ffb703;">Ammar Siddique</h1>
-  <p>Web Developer | Designer | Problem Solver</p>
+  <section class="content">
+    <h2>Design That Captures Attention</h2>
+    <p>Build modern, responsive, and creative web pages with HTML & CSS.</p>
+    <button>Get Started</button>
+  </section>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
-
-<!-- About -->
-<section id="about">
-  <div style="display:flex; flex-wrap:wrap; gap:40px; align-items:center;">
-
-    <div style="flex:1; min-width:250px;">
-      <img 
-        src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1"
-        alt="Profile Photo"
-        style="width:100%; border-radius:12px; box-shadow:0 8px 20px rgba(0,0,0,0.3);">
+  <section class="features">
+    <div class="feature-box">
+      <h3>Clean Layouts</h3>
+      <p>Organize your content with sections, grids, and balanced spacing.</p>
     </div>
-
-    <div style="flex:2; min-width:300px;">
-      <h2>ABOUT ME</h2>
-      <p style="font-size:17px;">
-        I am a passionate web developer with strong fundamentals in HTML, CSS, and JavaScript.
-        I enjoy building clean, responsive, and user-friendly websites. I follow the
-        Software Development Life Cycle (SDLC) to design, develop, test, and deploy applications.
-      </p>
-
-      <p><strong>Email:</strong> ammarsiddique@example.com</p>
-
-      <a href="resume.pdf" download
-         style="display:inline-block; margin-top:20px; padding:12px 26px;
-                background:#ffb703; color:#000; text-decoration:none;
-                border-radius:6px; font-weight:bold;">
-        DOWNLOAD RESUME
-      </a>
+    <div class="feature-box">
+      <h3>Modern Styling</h3>
+      <p>Use gradients, hover effects, and animations to impress users.</p>
     </div>
-  </div>
-</section>
-
-<!-- Skills -->
-<section id="skills">
-  <h2 style="text-align:center;">SKILLS</h2>
-
-  <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:25px;">
-
-    <div style="background:#ffffff; padding:22px; border-radius:18px;
-                box-shadow:0 6px 15px rgba(0,0,0,0.2); text-align:center;">
-      <h3>HTML & CSS</h3>
-      <p>Responsive and accessible web layouts.</p>
-    </div>
-
-    <div style="background:#ffffff; padding:22px; border-radius:18px;
-                box-shadow:0 6px 15px rgba(0,0,0,0.2); text-align:center;">
-      <h3>JavaScript</h3>
-      <p>Dynamic and interactive web features.</p>
-    </div>
-
-    <div style="background:#ffffff; padding:22px; border-radius:18px;
-                box-shadow:0 6px 15px rgba(0,0,0,0.2); text-align:center;">
+    <div class="feature-box">
       <h3>Responsive Design</h3>
-      <p>Mobile-first layouts for all screens.</p>
+      <p>Ensure your landing page looks great on all devices.</p>
     </div>
+  </section>
 
-    <div style="background:#ffffff; padding:22px; border-radius:18px;
-                box-shadow:0 6px 15px rgba(0,0,0,0.2); text-align:center;">
-      <h3>Git & GitHub</h3>
-      <p>Version control and collaboration.</p>
-    </div>
-
-  </div>
-</section>
-
-<!-- Projects -->
-<section id="projects">
-  <h2>PROJECTS</h2>
-
-  <h3>Portfolio Website</h3>
-  <p>
-    A personal portfolio website developed using HTML and CSS showcasing skills,
-    projects, and resume with a clean and professional design.
-  </p>
-
-  <h3 style="margin-top:30px;">Weather App</h3>
-  <p>
-    A weather application built using JavaScript that fetches real-time weather data
-    from an API and displays it in a responsive layout.
-  </p>
-</section>
-
-<!-- Footer / Contact -->
-<footer id="contact">
-  <p>&copy; 2026 Ammar Siddique. All rights reserved.</p>
-
-  <p>
-    Email:
-    <a href="mailto:ammarsiddique@example.com" style="color:#ffb703;">
-      ammarsiddique@example.com
-    </a>
-  </p>
-
-  <p>
-    <a href="https://github.com/" style="color:#ffb703;">GitHub</a> |
-    <a href="https://linkedin.com/in/" style="color:#ffb703;">LinkedIn</a>
-  </p>
-</footer>
-
+  <footer>
+    <p>&copy; 2026 Your Name. All rights reserved.</p>
+  </footer>
 </body>
 </html>
