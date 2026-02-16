@@ -1,47 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Landing Page</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="style.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic Calculator</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Landing Page</h1>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Contact</a>
-    </nav>
-  </header>
+  <div class="calculator">
+    <input type="text" class="display" id="display" disabled>
+    <div class="buttons">
+      <button class="clear">C</button>
+      <button class="back">⌫</button>
+      <button>(</button>
+      <button>)</button>
+      <button class="operator">/</button>
 
-  <section class="content">
-    <h2>Design That Captures Attention</h2>
-    <p>Build modern, responsive, and creative web pages with HTML & CSS.</p>
-    <button>Get Started</button>
-  </section>
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button class="operator">*</button>
 
-  <section class="features">
-    <div class="feature-box">
-      <h3>Clean Layouts</h3>
-      <p>Organize your content with sections, grids, and balanced spacing.</p>
-    </div>
-    <div class="feature-box">
-      <h3>Modern Styling</h3>
-      <p>Use gradients, hover effects, and animations to impress users.</p>
-    </div>
-    <div class="feature-box">
-      <h3>Responsive Design</h3>
-      <p>Ensure your landing page looks great on all devices.</p>
-    </div>
-  </section>
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button class="operator">-</button>
 
-  <footer>
-    <p>&copy; 2026 Your Name. All rights reserved.</p>
-  </footer>
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button class="operator">+</button>
+
+      <button>0</button>
+      <button>.</button>
+      <button class="equal">=</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
